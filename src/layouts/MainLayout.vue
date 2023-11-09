@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh Lpr lFf">
-    <q-header elevated>
+    <q-header elevated class="bg-orange">
       <q-toolbar>
         <q-btn
           flat
@@ -34,9 +34,9 @@
         </q-item>
         <q-item clickable>
           <q-item-section side>
-            <q-icon name="mdi-shopping" />
+            <q-icon name="mdi-shopping" color="grey-6" />
           </q-item-section>
-          <q-item-section>
+          <q-item-section class="text-grey-9">
             Shopping List
           </q-item-section>
           <q-item-section side>
