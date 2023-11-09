@@ -22,22 +22,27 @@
     </q-card>
     <div class="col-xs-3">
       <q-toolbar class="bg-primary ">
-        <q-btn fab icon="mdi-plus" color="secondary" style="margin-bottom: -42px;" class="q-ml-md"/>
+        <CreateToDoButton fab icon="mdi-plus" color="secondary" style="margin-bottom: -42px;" class="q-ml-md"/>
       </q-toolbar>
     </div>
   </q-page>
 </template>
 
 <script>
+import CreateToDoButton from 'components/CreateToDoButton.vue'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'IndexPage',
+
   data () {
     return {
       selected: null,
       search: ''
     }
+  },
+  components: {
+    CreateToDoButton
   }
 })
 </script>
